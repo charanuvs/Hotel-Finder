@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://webstrar36.fulton.asu.edu/Page6/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://webstrar36.fulton.asu.edu/Page6/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://webstrar36.fulton.asu.edu/Page6/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/assignment3wcfservices" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_addtocart_InputMessage">
+    <wsdl:part name="parameters" element="tns:addtocart" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addtocart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addtocartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deletefromcart_InputMessage">
+    <wsdl:part name="parameters" element="tns:deletefromcart" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deletefromcart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deletefromcartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getitems_InputMessage">
+    <wsdl:part name="parameters" element="tns:getitems" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getitems_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getitemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_clearcart_InputMessage">
+    <wsdl:part name="parameters" element="tns:clearcart" />
+  </wsdl:message>
+  <wsdl:message name="IService1_clearcart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:clearcartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetZipCode_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetZipCode" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetZipCode_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetZipCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_credentialCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:credentialCheck" />
+  </wsdl:message>
+  <wsdl:message name="IService1_credentialCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:credentialCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_stemmer_InputMessage">
+    <wsdl:part name="parameters" element="tns:stemmer" />
+  </wsdl:message>
+  <wsdl:message name="IService1_stemmer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:stemmerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="addtocart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addtocart" message="tns:IService1_addtocart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addtocartResponse" message="tns:IService1_addtocart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deletefromcart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deletefromcart" message="tns:IService1_deletefromcart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deletefromcartResponse" message="tns:IService1_deletefromcart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getitems">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getitems" message="tns:IService1_getitems_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getitemsResponse" message="tns:IService1_getitems_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="clearcart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/clearcart" message="tns:IService1_clearcart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/clearcartResponse" message="tns:IService1_clearcart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZipCode">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetZipCode" message="tns:IService1_GetZipCode_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetZipCodeResponse" message="tns:IService1_GetZipCode_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="credentialCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/credentialCheck" message="tns:IService1_credentialCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/credentialCheckResponse" message="tns:IService1_credentialCheck_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="stemmer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/stemmer" message="tns:IService1_stemmer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/stemmerResponse" message="tns:IService1_stemmer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="addtocart">
+      <soap:operation soapAction="http://tempuri.org/IService1/addtocart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletefromcart">
+      <soap:operation soapAction="http://tempuri.org/IService1/deletefromcart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getitems">
+      <soap:operation soapAction="http://tempuri.org/IService1/getitems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="clearcart">
+      <soap:operation soapAction="http://tempuri.org/IService1/clearcart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetZipCode">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetZipCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="credentialCheck">
+      <soap:operation soapAction="http://tempuri.org/IService1/credentialCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stemmer">
+      <soap:operation soapAction="http://tempuri.org/IService1/stemmer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://webstrar36.fulton.asu.edu/Page6/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

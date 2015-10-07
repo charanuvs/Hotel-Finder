@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<trip>
+  <users>
+    <UserID>User1</UserID>
+    <Role>Admin</Role>
+    <Email>116!101!115!116!64!97!115!117!46!101!100!117!</Email>
+    <Password>49!57!50!53!</Password>
+  </users>
+  <users>
+    <UserID>test</UserID>
+    <Role>Member</Role>
+    <Email>116!101!115!116!</Email>
+    <Password>116!101!115!116!</Password>
+  </users>
+  <users>
+    <UserID>one</UserID>
+    <Role>Member</Role>
+    <Email>111!110!101!</Email>
+    <Password>111!110!101!</Password>
+  </users>
+  <users>
+    <UserID>charan</UserID>
+    <Role>Admin</Role>
+    <Email>salam</Email>
+    <Password>99!104!97!114!97!110!57!50!</Password>
+  </users>
+</trip>

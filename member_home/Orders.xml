@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<orders>
+  <order>
+    <orderID>925</orderID>
+    <email>sample1@gmail.com</email>
+    <address>1009 E Uppal Road, Hyderabad</address>
+  </order>
+  <order>
+    <orderID>349</orderID>
+    <email>sample2@yahoo.com</email>
+    <address>1007 North street, Tempe</address>
+  </order>
+</orders>
